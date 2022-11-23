@@ -20,7 +20,7 @@
 // Callback function to complete GET '/all'
 
 // Post Route
-  
+
 
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
@@ -46,19 +46,19 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
-app.listen(port,listening);
-function listening (){
+app.listen(port, listening);
+function listening() {
     console.log(`server Running on this Link: http://localhost:${port}`);
 }
-app.get('/getAll',(req,res)=>{
+app.get('/getAll', (req, res) => {
     res.send(projectData).status(200).end();
 });
 
-app.post('/postData',(req,res)=>{
-    projectData ={
-        temp:req.body.temp,
-        date:req.body.date,
-        response:req.body.content
+app.post('/postData', (req, res) => {
+    projectData = {
+        temp: req.body.temp,
+        date: req.body.date,
+        response: req.body.content
     }
     res.send(projectData).status(200).end();
     console.log(projectData);
