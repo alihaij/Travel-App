@@ -7,6 +7,7 @@ const feelingsElement = document.querySelector('#feelings');
 const dateElement = document.querySelector('#date');
 const tempElemetn = document.querySelector('#temp');
 const contentElement = document.querySelector('#content');
+//ddd
 
 
 document.querySelector('#generate').addEventListener("click", function () {
