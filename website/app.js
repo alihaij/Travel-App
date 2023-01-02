@@ -27,9 +27,7 @@ document.querySelector('#generate').addEventListener("click", function () {
 
 async function getInformation(zipCode) {
     let response = await(await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${apiKey}&units=imperial`)).json();
-    //     await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${apiKey}&units=imperial`)
-    //    .then(response => console.log(response.json()))
-    //    .then(json => console.log(json))
+  
     console.log(response);
     return response;
 }
